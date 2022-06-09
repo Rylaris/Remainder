@@ -14,6 +14,8 @@
 		FAC63ADE2851A51700F24527 /* ReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC63ADD2851A51700F24527 /* ReminderTests.swift */; };
 		FAC63AE82851A51700F24527 /* ReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC63AE72851A51700F24527 /* ReminderUITests.swift */; };
 		FAC63AEA2851A51700F24527 /* ReminderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC63AE92851A51700F24527 /* ReminderUITestsLaunchTests.swift */; };
+		FAC63AF82851A5F200F24527 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC63AF72851A5F200F24527 /* EventMonitor.swift */; };
+		FAC63AFB2851AA3100F24527 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC63AFA2851AA3100F24527 /* PopoverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		FAC63AE32851A51700F24527 /* ReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC63AE72851A51700F24527 /* ReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderUITests.swift; sourceTree = "<group>"; };
 		FAC63AE92851A51700F24527 /* ReminderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAC63AF72851A5F200F24527 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		FAC63AF92851A84200F24527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FAC63AFA2851AA3100F24527 /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +100,8 @@
 		FAC63ACA2851A51500F24527 /* Reminder */ = {
 			isa = PBXGroup;
 			children = (
+				FAC63AF92851A84200F24527 /* Info.plist */,
+				FAC63AF62851A5C900F24527 /* Controller */,
 				FAC63ACB2851A51500F24527 /* AppDelegate.swift */,
 				FAC63ACD2851A51500F24527 /* ViewController.swift */,
 				FAC63ACF2851A51700F24527 /* Assets.xcassets */,
@@ -119,6 +126,15 @@
 				FAC63AE92851A51700F24527 /* ReminderUITestsLaunchTests.swift */,
 			);
 			path = ReminderUITests;
+			sourceTree = "<group>";
+		};
+		FAC63AF62851A5C900F24527 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAC63AF72851A5F200F24527 /* EventMonitor.swift */,
+				FAC63AFA2851AA3100F24527 /* PopoverViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC63AFB2851AA3100F24527 /* PopoverViewController.swift in Sources */,
+				FAC63AF82851A5F200F24527 /* EventMonitor.swift in Sources */,
 				FAC63ACE2851A51500F24527 /* ViewController.swift in Sources */,
 				FAC63ACC2851A51500F24527 /* AppDelegate.swift in Sources */,
 			);
@@ -425,6 +443,7 @@
 				DEVELOPMENT_TEAM = CTDKDJ363H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reminder/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -452,6 +471,7 @@
 				DEVELOPMENT_TEAM = CTDKDJ363H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reminder/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
